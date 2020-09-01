@@ -1,0 +1,12 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=nokia5110lcd.stp
+Dependencies=
+[Options]
+ActiveProject=nokia5110lcd
+ActiveConfig=Debug
+AddSortedElements=1
