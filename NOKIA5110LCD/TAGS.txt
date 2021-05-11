@@ -1266,15 +1266,15 @@ IER	stm8s_stdperiph_driver\inc\stm8s.h	2173;"	member	struct:__anon6
 IER	stm8s_stdperiph_driver\inc\stm8s.h	610;"	member	struct:TIM1_struct
 IER	stm8s_stdperiph_driver\inc\stm8s.h	823;"	member	struct:TIM2_struct
 IER	stm8s_stdperiph_driver\inc\stm8s.h	947;"	member	struct:TIM3_struct
-INT16_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	99;"	macro
-INT16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	52;"	macro
-INT16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	49;"	macro
-INT32_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	100;"	macro
-INT32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	53;"	macro
-INT32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	50;"	macro
-INT8_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	98;"	macro
-INT8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	51;"	macro
-INT8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	48;"	macro
+INT16_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	97;"	macro
+INT16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	50;"	macro
+INT16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	47;"	macro
+INT32_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	98;"	macro
+INT32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	51;"	macro
+INT32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	48;"	macro
+INT8_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	96;"	macro
+INT8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	49;"	macro
+INT8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	46;"	macro
 INTERRUPT	stm8s_stdperiph_driver\inc\stm8s.h	2762;"	macro
 INTERRUPT	stm8s_stdperiph_driver\inc\stm8s.h	2764;"	macro
 INTERRUPT_HANDLER	stm8s_stdperiph_driver\inc\stm8s.h	2740;"	macro
@@ -1283,23 +1283,23 @@ INTERRUPT_HANDLER	stm8s_stdperiph_driver\inc\stm8s.h	2752;"	macro
 INTERRUPT_HANDLER_TRAP	stm8s_stdperiph_driver\inc\stm8s.h	2741;"	macro
 INTERRUPT_HANDLER_TRAP	stm8s_stdperiph_driver\inc\stm8s.h	2746;"	macro
 INTERRUPT_HANDLER_TRAP	stm8s_stdperiph_driver\inc\stm8s.h	2755;"	macro
-INTMAX_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	106;"	macro
-INTMAX_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	93;"	macro
-INTMAX_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	92;"	macro
-INTPTR_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	85;"	macro
-INTPTR_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	84;"	macro
-INT_FAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	76;"	macro
-INT_FAST16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	73;"	macro
-INT_FAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	77;"	macro
-INT_FAST32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	74;"	macro
-INT_FAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	75;"	macro
-INT_FAST8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	72;"	macro
-INT_LEAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	64;"	macro
-INT_LEAST16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	61;"	macro
-INT_LEAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	65;"	macro
-INT_LEAST32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	62;"	macro
-INT_LEAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	63;"	macro
-INT_LEAST8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	60;"	macro
+INTMAX_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	104;"	macro
+INTMAX_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	91;"	macro
+INTMAX_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	90;"	macro
+INTPTR_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	83;"	macro
+INTPTR_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	82;"	macro
+INT_FAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	74;"	macro
+INT_FAST16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	71;"	macro
+INT_FAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	75;"	macro
+INT_FAST32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	72;"	macro
+INT_FAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	73;"	macro
+INT_FAST8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	70;"	macro
+INT_LEAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	62;"	macro
+INT_LEAST16_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	59;"	macro
+INT_LEAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	63;"	macro
+INT_LEAST32_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	60;"	macro
+INT_LEAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	61;"	macro
+INT_LEAST8_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	58;"	macro
 IN_RAM	stm8s_stdperiph_driver\inc\stm8s.h	171;"	macro
 IN_RAM	stm8s_stdperiph_driver\inc\stm8s.h	173;"	macro
 IN_RAM	stm8s_stdperiph_driver\inc\stm8s.h	175;"	macro
@@ -1594,7 +1594,7 @@ LcdDrawBitmap	..\lcds\lcd_draw.c	656;"	function	signature:(uint8_t x, uint8_t y,
 LcdDrawBitmap	..\lcds\lcd_draw.h	47;"	prototype	signature:(uint8_t x, uint8_t y, uint8_t * bitmap, uint8_t sx,uint8_t sy, lcd_draw_mode_t mode)
 LcdDrawCircle	..\lcds\lcd_draw.c	486;"	function	signature:(uint8_t x, uint8_t y, uint8_t radius, lcd_draw_mode_t mode)
 LcdDrawCircle	..\lcds\lcd_draw.h	37;"	prototype	signature:(uint8_t x, uint8_t y, uint8_t radius, lcd_draw_mode_t mode)
-LcdDrawCircleHelper	..\lcds\lcd_draw.c	717;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, lcd_draw_mode_t mode)
+LcdDrawCircleHelper	..\lcds\lcd_draw.c	721;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t cornername, lcd_draw_mode_t mode)
 LcdDrawCircleHelper	..\lcds\lcd_draw.h	61;"	prototype	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, lcd_draw_mode_t mode)
 LcdDrawHLine	..\lcds\lcd_draw.c	427;"	function	signature:(uint8_t x, uint8_t y, uint8_t len, lcd_draw_mode_t mode)
 LcdDrawHLine	..\lcds\lcd_draw.h	39;"	prototype	signature:(uint8_t x, uint8_t y, uint8_t len, lcd_draw_mode_t mode)
@@ -1606,19 +1606,19 @@ LcdDrawRect	..\lcds\lcd_draw.c	536;"	function	signature:(uint8_t x1,uint8_t y1, 
 LcdDrawRect	..\lcds\lcd_draw.h	41;"	prototype	signature:(uint8_t x1,uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdDrawRoundRect	..\lcds\lcd_draw.c	586;"	function	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t r, lcd_draw_mode_t mode)
 LcdDrawRoundRect	..\lcds\lcd_draw.h	44;"	prototype	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t r, lcd_draw_mode_t mode)
-LcdDrawTriangle	..\lcds\lcd_draw.c	839;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
+LcdDrawTriangle	..\lcds\lcd_draw.c	843;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdDrawTriangle	..\lcds\lcd_draw.h	68;"	prototype	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdDrawVLine	..\lcds\lcd_draw.c	461;"	function	signature:(uint8_t x, uint8_t y, uint8_t l, lcd_draw_mode_t mode)
 LcdDrawVLine	..\lcds\lcd_draw.h	38;"	prototype	signature:(uint8_t x, uint8_t y,uint8_t l, lcd_draw_mode_t mode)
-LcdFillCircle	..\lcds\lcd_draw.c	766;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, lcd_draw_mode_t mode)
+LcdFillCircle	..\lcds\lcd_draw.c	770;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, lcd_draw_mode_t mode)
 LcdFillCircle	..\lcds\lcd_draw.h	63;"	prototype	signature:(uint8_t x0, uint8_t y0, uint8_t r, lcd_draw_mode_t mode)
-LcdFillCircleHelper	..\lcds\lcd_draw.c	784;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, lcd_draw_mode_t mode)
+LcdFillCircleHelper	..\lcds\lcd_draw.c	788;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, lcd_draw_mode_t mode)
 LcdFillCircleHelper	..\lcds\lcd_draw.h	65;"	prototype	signature:(uint8_t x0, uint8_t y0, uint8_t r, uint8_t corners, uint8_t delta, lcd_draw_mode_t mode)
-LcdFillRect	..\lcds\lcd_draw.c	691;"	function	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
+LcdFillRect	..\lcds\lcd_draw.c	695;"	function	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdFillRect	..\lcds\lcd_draw.h	58;"	prototype	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdFillRoundRect	..\lcds\lcd_draw.c	624;"	function	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t r, lcd_draw_mode_t mode)
 LcdFillRoundRect	..\lcds\lcd_draw.h	72;"	prototype	signature:(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, uint8_t r, lcd_draw_mode_t mode)
-LcdFillTriangle	..\lcds\lcd_draw.c	857;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
+LcdFillTriangle	..\lcds\lcd_draw.c	861;"	function	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdFillTriangle	..\lcds\lcd_draw.h	70;"	prototype	signature:(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2, lcd_draw_mode_t mode)
 LcdGetNumbers2Wr	..\lcds\lcd_draw.c	136;"	prototype	file:	signature:(uint32_t num, uint8_t * numArray)
 LcdGetNumbers2Wr	..\lcds\lcd_draw.c	241;"	function	file:	signature:(uint32_t num, uint8_t * numArray)
@@ -1716,8 +1716,8 @@ PSCR	stm8s_stdperiph_driver\inc\stm8s.h	956;"	member	struct:TIM3_struct
 PSCRH	stm8s_stdperiph_driver\inc\stm8s.h	622;"	member	struct:TIM1_struct
 PSCRL	stm8s_stdperiph_driver\inc\stm8s.h	623;"	member	struct:TIM1_struct
 PSR	stm8s_stdperiph_driver\inc\stm8s.h	2175;"	member	struct:__anon6
-PTRDIFF_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	88;"	macro
-PTRDIFF_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	87;"	macro
+PTRDIFF_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	86;"	macro
+PTRDIFF_MIN	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	85;"	macro
 PUKR	stm8s_stdperiph_driver\inc\stm8s.h	1516;"	member	struct:FLASH_struct
 Page	stm8s_stdperiph_driver\inc\stm8s.h	2319;"	member	struct:__anon6	typeref:union:__anon6::__anon7
 PointerAttr	stm8s_stdperiph_driver\inc\stm8s.h	156;"	macro
@@ -3200,21 +3200,21 @@ UART4_SR_TC	stm8s_stdperiph_driver\inc\stm8s.h	2098;"	macro
 UART4_SR_TXE	stm8s_stdperiph_driver\inc\stm8s.h	2097;"	macro
 UART4_TypeDef	stm8s_stdperiph_driver\inc\stm8s.h	2071;"	typedef	typeref:struct:UART4_struct
 UART4_struct	stm8s_stdperiph_driver\inc\stm8s.h	2056;"	struct
-UINT16_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	103;"	macro
-UINT16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	55;"	macro
-UINT32_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	104;"	macro
-UINT32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	56;"	macro
-UINT8_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	102;"	macro
-UINT8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	54;"	macro
-UINTMAX_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	107;"	macro
-UINTMAX_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	94;"	macro
-UINTPTR_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	86;"	macro
-UINT_FAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	79;"	macro
-UINT_FAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	80;"	macro
-UINT_FAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	78;"	macro
-UINT_LEAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	67;"	macro
-UINT_LEAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	68;"	macro
-UINT_LEAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	66;"	macro
+UINT16_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	101;"	macro
+UINT16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	53;"	macro
+UINT32_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	102;"	macro
+UINT32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	54;"	macro
+UINT8_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	100;"	macro
+UINT8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	52;"	macro
+UINTMAX_C	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	105;"	macro
+UINTMAX_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	92;"	macro
+UINTPTR_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	84;"	macro
+UINT_FAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	77;"	macro
+UINT_FAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	78;"	macro
+UINT_FAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	76;"	macro
+UINT_LEAST16_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	65;"	macro
+UINT_LEAST32_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	66;"	macro
+UINT_LEAST8_MAX	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	64;"	macro
 UNUSED	stm8s_stdperiph_driver\inc\stm8s.h	2797;"	macro
 USE_STDPERIPH_DRIVER	stm8s_stdperiph_driver\inc\stm8s.h	96;"	macro
 VECTOR_ID	stm8s_stdperiph_driver\inc\stm8s.h	2751;"	macro
@@ -3246,7 +3246,7 @@ _IAR_	stm8s_stdperiph_driver\inc\stm8s.h	87;"	macro
 _LCD5110_H	lcd5110.h	2;"	macro
 _LCD_DRAW_H_	..\lcds\lcd_draw.h	12;"	macro
 _LcdSwapUInt8	..\lcds\lcd_draw.c	137;"	prototype	file:	signature:(uint8_t * x1,uint8_t * x2)
-_LcdSwapUInt8	..\lcds\lcd_draw.c	951;"	function	file:	signature:(uint8_t * x1,uint8_t * x2)
+_LcdSwapUInt8	..\lcds\lcd_draw.c	955;"	function	file:	signature:(uint8_t * x1,uint8_t * x2)
 _RAISONANCE_	stm8s_stdperiph_driver\inc\stm8s.h	85;"	macro
 __I	stm8s_stdperiph_driver\inc\stm8s.h	207;"	macro
 __IO	stm8s_stdperiph_driver\inc\stm8s.h	209;"	macro
@@ -3279,7 +3279,6 @@ __STM8S_TIM2_H	stm8s_stdperiph_driver\inc\stm8s_tim2.h	30;"	macro
 __STM8S_TIM4_H	stm8s_stdperiph_driver\inc\stm8s_tim4.h	30;"	macro
 __STM8S_UART1_H	stm8s_stdperiph_driver\inc\stm8s_uart1.h	30;"	macro
 __STM8S_WWDG_H	stm8s_stdperiph_driver\inc\stm8s_wwdg.h	30;"	macro
-__TYPES__	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	10;"	macro
 __WCHAR_T__	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	22;"	macro
 _checkcrc16	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	59;"	prototype	signature:(void)
 _checkcrc16x	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	60;"	prototype	signature:(void)
@@ -3320,21 +3319,21 @@ free	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	43;"	prot
 halt	stm8s_stdperiph_driver\inc\stm8s.h	2715;"	macro
 halt	stm8s_stdperiph_driver\inc\stm8s.h	2724;"	macro
 halt	stm8s_stdperiph_driver\inc\stm8s.h	2734;"	macro
-int16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	12;"	typedef
-int32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	13;"	typedef
-int8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	11;"	typedef
-int_fast16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	30;"	typedef
-int_fast32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	31;"	typedef
-int_fast8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	29;"	typedef
-int_least16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	21;"	typedef
-int_least32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	22;"	typedef
-int_least8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	20;"	typedef
+int16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	10;"	typedef
+int32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	11;"	typedef
+int8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	9;"	typedef
+int_fast16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	28;"	typedef
+int_fast32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	29;"	typedef
+int_fast8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	27;"	typedef
+int_least16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	19;"	typedef
+int_least32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	20;"	typedef
+int_least8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	18;"	typedef
 interrupt_handler	stm8_interrupt_vector.c	9;"	member	struct:interrupt_vector	file:
 interrupt_handler_t	stm8_interrupt_vector.c	5;"	typedef	file:
 interrupt_instruction	stm8_interrupt_vector.c	8;"	member	struct:interrupt_vector	file:
 interrupt_vector	stm8_interrupt_vector.c	7;"	struct	file:
-intmax_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	43;"	typedef
-intptr_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	38;"	typedef
+intmax_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	41;"	typedef
+intptr_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	36;"	typedef
 isqrt	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	53;"	prototype	signature:(unsigned int)
 labs	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	44;"	prototype	signature:(long l)
 lcd5110Clear	lcd5110.h	32;"	prototype	signature:(void)
@@ -3390,17 +3389,17 @@ trap	stm8s_stdperiph_driver\inc\stm8s.h	2732;"	macro
 u16	stm8s_stdperiph_driver\inc\stm8s.h	219;"	typedef
 u32	stm8s_stdperiph_driver\inc\stm8s.h	218;"	typedef
 u8	stm8s_stdperiph_driver\inc\stm8s.h	220;"	typedef
-uint16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	15;"	typedef
-uint32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	16;"	typedef
-uint8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	14;"	typedef
-uint_fast16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	33;"	typedef
-uint_fast32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	34;"	typedef
-uint_fast8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	32;"	typedef
-uint_least16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	24;"	typedef
-uint_least32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	25;"	typedef
-uint_least8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	23;"	typedef
-uintmax_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	44;"	typedef
-uintptr_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	39;"	typedef
+uint16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	13;"	typedef
+uint32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	14;"	typedef
+uint8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	12;"	typedef
+uint_fast16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	31;"	typedef
+uint_fast32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	32;"	typedef
+uint_fast8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	30;"	typedef
+uint_least16_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	22;"	typedef
+uint_least32_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	23;"	typedef
+uint_least8_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	21;"	typedef
+uintmax_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	42;"	typedef
+uintptr_t	c:\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdint.h	37;"	typedef
 wfi	stm8s_stdperiph_driver\inc\stm8s.h	2714;"	macro
 wfi	stm8s_stdperiph_driver\inc\stm8s.h	2723;"	macro
 wfi	stm8s_stdperiph_driver\inc\stm8s.h	2733;"	macro

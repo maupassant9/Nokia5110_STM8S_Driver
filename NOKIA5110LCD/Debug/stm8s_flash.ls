@@ -1,6 +1,6 @@
    1                     ; C Compiler for STM8 (COSMIC Software)
-   2                     ; Parser V4.11.13 - 05 Feb 2019
-   3                     ; Generator (Limited) V4.4.9 - 06 Feb 2019
+   2                     ; Parser V4.12.1 - 30 Jun 2020
+   3                     ; Generator (Limited) V4.4.12 - 02 Jul 2020
   73                     ; 87 void FLASH_Unlock(FLASH_MemType_TypeDef FLASH_MemType)
   73                     ; 88 {
   75                     	switch	.text

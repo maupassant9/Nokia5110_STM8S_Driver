@@ -1,6 +1,6 @@
    1                     ; C Compiler for STM8 (COSMIC Software)
-   2                     ; Parser V4.11.13 - 05 Feb 2019
-   3                     ; Generator (Limited) V4.4.9 - 06 Feb 2019
+   2                     ; Parser V4.12.1 - 30 Jun 2020
+   3                     ; Generator (Limited) V4.4.12 - 02 Jul 2020
   13                     .const:	section	.text
   14  0000               _EstaticSensitive:
   15  0000 00            	dc.b	0
@@ -216,13 +216,13 @@
  288                     ; 45 {
  289                     	switch	.text
  290  0005               _main:
- 294                     ; 48 	clkInit();
+ 294                     ; 46 	clkInit();
  296  0005 adf9          	call	_clkInit
- 298                     ; 50 	lcd5110Init();  		//初始化LCD模块 
+ 298                     ; 48 	lcd5110Init(); 
  300  0007 cd0000        	call	_lcd5110Init
- 302                     ; 51 	LcdClear(); 		//清屏幕
+ 302                     ; 49 	LcdClear();	
  304  000a cd0000        	call	_LcdClear
- 306                     ; 61 	LcdDrawBitmap(0,0,EstaticSensitive,40,40, LCD_DRAW_MODE_SET);
+ 306                     ; 50 	LcdDrawBitmap(0,0,EstaticSensitive,40,40, LCD_DRAW_MODE_SET);
  308  000d 4b00          	push	#0
  309  000f 4b28          	push	#40
  310  0011 4b28          	push	#40
@@ -231,9 +231,9 @@
  313  0017 5f            	clrw	x
  314  0018 cd0000        	call	_LcdDrawBitmap
  316  001b 5b05          	addw	sp,#5
- 317                     ; 62 	LcdUpdate();
+ 317                     ; 51 	LcdUpdate();
  319  001d cd0000        	call	_LcdUpdate
- 321                     ; 63 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_XOR);
+ 321                     ; 52 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_XOR);
  323  0020 4b02          	push	#2
  324  0022 4b28          	push	#40
  325  0024 4b28          	push	#40
@@ -242,11 +242,11 @@
  328  002a ae2800        	ldw	x,#10240
  329  002d cd0000        	call	_LcdDrawBitmap
  331  0030 5b05          	addw	sp,#5
- 332                     ; 64 	LcdUpdate();
+ 332                     ; 53 	LcdUpdate();
  334  0032 cd0000        	call	_LcdUpdate
- 336                     ; 65 	LcdClear();
+ 336                     ; 54 	LcdClear();
  338  0035 cd0000        	call	_LcdClear
- 340                     ; 66 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_CLR);
+ 340                     ; 55 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_CLR);
  342  0038 4b01          	push	#1
  343  003a 4b28          	push	#40
  344  003c 4b28          	push	#40
@@ -255,11 +255,11 @@
  347  0042 ae2800        	ldw	x,#10240
  348  0045 cd0000        	call	_LcdDrawBitmap
  350  0048 5b05          	addw	sp,#5
- 351                     ; 67 	LcdUpdate();
+ 351                     ; 56 	LcdUpdate();
  353  004a cd0000        	call	_LcdUpdate
- 355                     ; 68 	LcdClear();
+ 355                     ; 57 	LcdClear();
  357  004d cd0000        	call	_LcdClear
- 359                     ; 69 	LcdFillRoundRect(8,9,60,20, 10, LCD_DRAW_MODE_SET);
+ 359                     ; 58 	LcdFillRoundRect(8,9,60,20, 10, LCD_DRAW_MODE_SET);
  361  0050 4b00          	push	#0
  362  0052 4b0a          	push	#10
  363  0054 4b14          	push	#20
@@ -267,19 +267,19 @@
  365  0058 ae0809        	ldw	x,#2057
  366  005b cd0000        	call	_LcdFillRoundRect
  368  005e 5b04          	addw	sp,#4
- 369                     ; 70 	LcdUpdate();
+ 369                     ; 59 	LcdUpdate();
  371  0060 cd0000        	call	_LcdUpdate
- 373                     ; 71 	LcdPutString(20,12,"eat",LCD_DRAW_MODE_CLR);
+ 373                     ; 60 	LcdPutString(20,12,"eat",LCD_DRAW_MODE_CLR);
  375  0063 4b01          	push	#1
  376  0065 ae00c8        	ldw	x,#L13
  377  0068 89            	pushw	x
  378  0069 ae140c        	ldw	x,#5132
  379  006c cd0000        	call	_LcdPutString
  381  006f 5b03          	addw	sp,#3
- 382                     ; 72 	LcdUpdate();
+ 382                     ; 61 	LcdUpdate();
  384  0071 cd0000        	call	_LcdUpdate
  386  0074               L33:
- 387                     ; 73 	while (1);
+ 387                     ; 62 	while (1);
  389  0074 20fe          	jra	L33
  414                     	xdef	_main
  415                     	xdef	_clkInit

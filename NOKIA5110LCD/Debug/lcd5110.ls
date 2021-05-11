@@ -1,13 +1,13 @@
    1                     ; C Compiler for STM8 (COSMIC Software)
-   2                     ; Parser V4.11.13 - 05 Feb 2019
-   3                     ; Generator (Limited) V4.4.9 - 06 Feb 2019
+   2                     ; Parser V4.12.1 - 30 Jun 2020
+   3                     ; Generator (Limited) V4.4.12 - 02 Jul 2020
   42                     ; 40 private void sce0(void)
   42                     ; 41 {
   44                     	switch	.text
   45  0000               _sce0:
   49                     ; 42 	GPIO_WriteLow(LCD5110_SCE_GPIO,LCD5110_SCE_PIN);
-  51  0000 4b04          	push	#4
-  52  0002 ae5000        	ldw	x,#20480
+  51  0000 4b10          	push	#16
+  52  0002 ae5005        	ldw	x,#20485
   53  0005 cd0000        	call	_GPIO_WriteLow
   55  0008 84            	pop	a
   56                     ; 43 }
@@ -17,8 +17,8 @@
   84                     	switch	.text
   85  000a               _sce1:
   89                     ; 47 	GPIO_WriteHigh(LCD5110_SCE_GPIO,LCD5110_SCE_PIN);
-  91  000a 4b04          	push	#4
-  92  000c ae5000        	ldw	x,#20480
+  91  000a 4b10          	push	#16
+  92  000c ae5005        	ldw	x,#20485
   93  000f cd0000        	call	_GPIO_WriteHigh
   95  0012 84            	pop	a
   96                     ; 48 }
@@ -28,7 +28,7 @@
  124                     	switch	.text
  125  0014               _res0:
  129                     ; 52 	GPIO_WriteLow(LCD5110_RESET_GPIO,LCD5110_RESET_PIN);
- 131  0014 4b10          	push	#16
+ 131  0014 4b08          	push	#8
  132  0016 ae500f        	ldw	x,#20495
  133  0019 cd0000        	call	_GPIO_WriteLow
  135  001c 84            	pop	a
@@ -39,7 +39,7 @@
  164                     	switch	.text
  165  001e               _res1:
  169                     ; 57 	GPIO_WriteHigh(LCD5110_RESET_GPIO,LCD5110_RESET_PIN);
- 171  001e 4b10          	push	#16
+ 171  001e 4b08          	push	#8
  172  0020 ae500f        	ldw	x,#20495
  173  0023 cd0000        	call	_GPIO_WriteHigh
  175  0026 84            	pop	a
@@ -50,8 +50,8 @@
  204                     	switch	.text
  205  0028               _dc0:
  209                     ; 62 	GPIO_WriteLow(LCD5110_DC_GPIO,LCD5110_DC_PIN);
- 211  0028 4b02          	push	#2
- 212  002a ae5000        	ldw	x,#20480
+ 211  0028 4b04          	push	#4
+ 212  002a ae500f        	ldw	x,#20495
  213  002d cd0000        	call	_GPIO_WriteLow
  215  0030 84            	pop	a
  216                     ; 63 }
@@ -61,8 +61,8 @@
  244                     	switch	.text
  245  0032               _dc1:
  249                     ; 67 	GPIO_WriteHigh(LCD5110_DC_GPIO,LCD5110_DC_PIN);
- 251  0032 4b02          	push	#2
- 252  0034 ae5000        	ldw	x,#20480
+ 251  0032 4b04          	push	#4
+ 252  0034 ae500f        	ldw	x,#20495
  253  0037 cd0000        	call	_GPIO_WriteHigh
  255  003a 84            	pop	a
  256                     ; 68 }
@@ -73,7 +73,7 @@
  285  003c               _sdin0:
  289                     ; 72 	GPIO_WriteLow(LCD5110_DA_GPIO,LCD5110_DA_PIN);
  291  003c 4b40          	push	#64
- 292  003e ae500f        	ldw	x,#20495
+ 292  003e ae500a        	ldw	x,#20490
  293  0041 cd0000        	call	_GPIO_WriteLow
  295  0044 84            	pop	a
  296                     ; 73 }
@@ -84,7 +84,7 @@
  325  0046               _sdin1:
  329                     ; 77 	GPIO_WriteHigh(LCD5110_DA_GPIO,LCD5110_DA_PIN);
  331  0046 4b40          	push	#64
- 332  0048 ae500f        	ldw	x,#20495
+ 332  0048 ae500a        	ldw	x,#20490
  333  004b cd0000        	call	_GPIO_WriteHigh
  335  004e 84            	pop	a
  336                     ; 78 }
@@ -95,7 +95,7 @@
  365  0050               _sclk0:
  369                     ; 82 	GPIO_WriteLow(LCD5110_CLK_GPIO,LCD5110_CLK_PIN);
  371  0050 4b20          	push	#32
- 372  0052 ae500f        	ldw	x,#20495
+ 372  0052 ae500a        	ldw	x,#20490
  373  0055 cd0000        	call	_GPIO_WriteLow
  375  0058 84            	pop	a
  376                     ; 83 }
@@ -106,7 +106,7 @@
  405  005a               _sclk1:
  409                     ; 87 	GPIO_WriteHigh(LCD5110_CLK_GPIO,LCD5110_CLK_PIN);
  411  005a 4b20          	push	#32
- 412  005c ae500f        	ldw	x,#20495
+ 412  005c ae500a        	ldw	x,#20490
  413  005f cd0000        	call	_GPIO_WriteHigh
  415  0062 84            	pop	a
  416                     ; 88 }
@@ -116,7 +116,7 @@
  444                     	switch	.text
  445  0064               _backled0:
  449                     ; 92 	GPIO_WriteLow(LCD5110_LED_GPIO,LCD5110_LED_PIN);
- 451  0064 4b04          	push	#4
+ 451  0064 4b08          	push	#8
  452  0066 ae500a        	ldw	x,#20490
  453  0069 cd0000        	call	_GPIO_WriteLow
  455  006c 84            	pop	a
@@ -127,7 +127,7 @@
  484                     	switch	.text
  485  006e               _backled1:
  489                     ; 97 	GPIO_WriteHigh(LCD5110_LED_GPIO,LCD5110_LED_PIN);
- 491  006e 4b04          	push	#4
+ 491  006e 4b08          	push	#8
  492  0070 ae500a        	ldw	x,#20490
  493  0073 cd0000        	call	_GPIO_WriteHigh
  495  0076 84            	pop	a
@@ -139,37 +139,37 @@
  530  0078               _lcd5110Init:
  534                     ; 113 	GPIO_Init(LCD5110_LED_GPIO,LCD5110_LED_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  536  0078 4be0          	push	#224
- 537  007a 4b04          	push	#4
+ 537  007a 4b08          	push	#8
  538  007c ae500a        	ldw	x,#20490
  539  007f cd0000        	call	_GPIO_Init
  541  0082 85            	popw	x
  542                     ; 114 	GPIO_Init(LCD5110_CLK_GPIO,LCD5110_CLK_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  544  0083 4be0          	push	#224
  545  0085 4b20          	push	#32
- 546  0087 ae500f        	ldw	x,#20495
+ 546  0087 ae500a        	ldw	x,#20490
  547  008a cd0000        	call	_GPIO_Init
  549  008d 85            	popw	x
  550                     ; 115 	GPIO_Init(LCD5110_DA_GPIO,LCD5110_DA_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  552  008e 4be0          	push	#224
  553  0090 4b40          	push	#64
- 554  0092 ae500f        	ldw	x,#20495
+ 554  0092 ae500a        	ldw	x,#20490
  555  0095 cd0000        	call	_GPIO_Init
  557  0098 85            	popw	x
  558                     ; 116 	GPIO_Init(LCD5110_DC_GPIO,LCD5110_DC_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  560  0099 4be0          	push	#224
- 561  009b 4b02          	push	#2
- 562  009d ae5000        	ldw	x,#20480
+ 561  009b 4b04          	push	#4
+ 562  009d ae500f        	ldw	x,#20495
  563  00a0 cd0000        	call	_GPIO_Init
  565  00a3 85            	popw	x
  566                     ; 117 	GPIO_Init(LCD5110_SCE_GPIO,LCD5110_SCE_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  568  00a4 4be0          	push	#224
- 569  00a6 4b04          	push	#4
- 570  00a8 ae5000        	ldw	x,#20480
+ 569  00a6 4b10          	push	#16
+ 570  00a8 ae5005        	ldw	x,#20485
  571  00ab cd0000        	call	_GPIO_Init
  573  00ae 85            	popw	x
  574                     ; 118 	GPIO_Init(LCD5110_RESET_GPIO,LCD5110_RESET_PIN, GPIO_MODE_OUT_PP_LOW_FAST);
  576  00af 4be0          	push	#224
- 577  00b1 4b10          	push	#16
+ 577  00b1 4b08          	push	#8
  578  00b3 ae500f        	ldw	x,#20495
  579  00b6 cd0000        	call	_GPIO_Init
  581  00b9 85            	popw	x
