@@ -212,83 +212,83 @@
  253                     ; 42 }
  256  0004 81            	ret
  259                     	xref	_LcdUpdate
- 288                     ; 44 main()
- 288                     ; 45 {
- 289                     	switch	.text
- 290  0005               _main:
- 294                     ; 46 	clkInit();
- 296  0005 adf9          	call	_clkInit
- 298                     ; 48 	lcd5110Init(); 
- 300  0007 cd0000        	call	_lcd5110Init
- 302                     ; 49 	LcdClear();	
- 304  000a cd0000        	call	_LcdClear
- 306                     ; 50 	LcdDrawBitmap(0,0,EstaticSensitive,40,40, LCD_DRAW_MODE_SET);
- 308  000d 4b00          	push	#0
- 309  000f 4b28          	push	#40
- 310  0011 4b28          	push	#40
- 311  0013 ae0000        	ldw	x,#_EstaticSensitive
- 312  0016 89            	pushw	x
- 313  0017 5f            	clrw	x
- 314  0018 cd0000        	call	_LcdDrawBitmap
- 316  001b 5b05          	addw	sp,#5
- 317                     ; 51 	LcdUpdate();
- 319  001d cd0000        	call	_LcdUpdate
- 321                     ; 52 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_XOR);
- 323  0020 4b02          	push	#2
- 324  0022 4b28          	push	#40
- 325  0024 4b28          	push	#40
- 326  0026 ae0000        	ldw	x,#_EstaticSensitive
- 327  0029 89            	pushw	x
- 328  002a ae2800        	ldw	x,#10240
- 329  002d cd0000        	call	_LcdDrawBitmap
- 331  0030 5b05          	addw	sp,#5
- 332                     ; 53 	LcdUpdate();
- 334  0032 cd0000        	call	_LcdUpdate
- 336                     ; 54 	LcdClear();
- 338  0035 cd0000        	call	_LcdClear
- 340                     ; 55 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_CLR);
- 342  0038 4b01          	push	#1
- 343  003a 4b28          	push	#40
- 344  003c 4b28          	push	#40
- 345  003e ae0000        	ldw	x,#_EstaticSensitive
- 346  0041 89            	pushw	x
- 347  0042 ae2800        	ldw	x,#10240
- 348  0045 cd0000        	call	_LcdDrawBitmap
- 350  0048 5b05          	addw	sp,#5
- 351                     ; 56 	LcdUpdate();
- 353  004a cd0000        	call	_LcdUpdate
- 355                     ; 57 	LcdClear();
- 357  004d cd0000        	call	_LcdClear
- 359                     ; 58 	LcdFillRoundRect(8,9,60,20, 10, LCD_DRAW_MODE_SET);
- 361  0050 4b00          	push	#0
- 362  0052 4b0a          	push	#10
- 363  0054 4b14          	push	#20
- 364  0056 4b3c          	push	#60
- 365  0058 ae0809        	ldw	x,#2057
- 366  005b cd0000        	call	_LcdFillRoundRect
- 368  005e 5b04          	addw	sp,#4
- 369                     ; 59 	LcdUpdate();
- 371  0060 cd0000        	call	_LcdUpdate
- 373                     ; 60 	LcdPutString(20,12,"eat",LCD_DRAW_MODE_CLR);
- 375  0063 4b01          	push	#1
- 376  0065 ae00c8        	ldw	x,#L13
- 377  0068 89            	pushw	x
- 378  0069 ae140c        	ldw	x,#5132
- 379  006c cd0000        	call	_LcdPutString
- 381  006f 5b03          	addw	sp,#3
- 382                     ; 61 	LcdUpdate();
- 384  0071 cd0000        	call	_LcdUpdate
- 386  0074               L33:
- 387                     ; 62 	while (1);
- 389  0074 20fe          	jra	L33
- 414                     	xdef	_main
- 415                     	xdef	_clkInit
- 416                     	xdef	_EstaticSensitive
- 417                     	xref	_LcdFillRoundRect
- 418                     	xref	_LcdPutString
- 419                     	xref	_LcdDrawBitmap
- 420                     	xref	_LcdClear
- 421                     	xref	_lcd5110Init
+ 260                     	xref	_lcd5110Init
+ 289                     ; 44 void main( void )
+ 289                     ; 45 {
+ 290                     	switch	.text
+ 291  0005               _main:
+ 295                     ; 46 	clkInit();
+ 297  0005 adf9          	call	_clkInit
+ 299                     ; 48 	lcd5110Init(); 
+ 301  0007 cd0000        	call	_lcd5110Init
+ 303                     ; 49 	LcdClear();	
+ 305  000a cd0000        	call	_LcdClear
+ 307                     ; 50 	LcdDrawBitmap(0,0,EstaticSensitive,40,40, LCD_DRAW_MODE_SET);
+ 309  000d 4b00          	push	#0
+ 310  000f 4b28          	push	#40
+ 311  0011 4b28          	push	#40
+ 312  0013 ae0000        	ldw	x,#_EstaticSensitive
+ 313  0016 89            	pushw	x
+ 314  0017 5f            	clrw	x
+ 315  0018 cd0000        	call	_LcdDrawBitmap
+ 317  001b 5b05          	addw	sp,#5
+ 318                     ; 51 	LcdUpdate();
+ 320  001d cd0000        	call	_LcdUpdate
+ 322                     ; 52 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_XOR);
+ 324  0020 4b02          	push	#2
+ 325  0022 4b28          	push	#40
+ 326  0024 4b28          	push	#40
+ 327  0026 ae0000        	ldw	x,#_EstaticSensitive
+ 328  0029 89            	pushw	x
+ 329  002a ae2800        	ldw	x,#10240
+ 330  002d cd0000        	call	_LcdDrawBitmap
+ 332  0030 5b05          	addw	sp,#5
+ 333                     ; 53 	LcdUpdate();
+ 335  0032 cd0000        	call	_LcdUpdate
+ 337                     ; 54 	LcdClear();
+ 339  0035 cd0000        	call	_LcdClear
+ 341                     ; 55 	LcdDrawBitmap(40,0,EstaticSensitive,40,40, LCD_DRAW_MODE_CLR);
+ 343  0038 4b01          	push	#1
+ 344  003a 4b28          	push	#40
+ 345  003c 4b28          	push	#40
+ 346  003e ae0000        	ldw	x,#_EstaticSensitive
+ 347  0041 89            	pushw	x
+ 348  0042 ae2800        	ldw	x,#10240
+ 349  0045 cd0000        	call	_LcdDrawBitmap
+ 351  0048 5b05          	addw	sp,#5
+ 352                     ; 56 	LcdUpdate();
+ 354  004a cd0000        	call	_LcdUpdate
+ 356                     ; 57 	LcdClear();
+ 358  004d cd0000        	call	_LcdClear
+ 360                     ; 58 	LcdFillRoundRect(8,9,60,20, 10, LCD_DRAW_MODE_SET);
+ 362  0050 4b00          	push	#0
+ 363  0052 4b0a          	push	#10
+ 364  0054 4b14          	push	#20
+ 365  0056 4b3c          	push	#60
+ 366  0058 ae0809        	ldw	x,#2057
+ 367  005b cd0000        	call	_LcdFillRoundRect
+ 369  005e 5b04          	addw	sp,#4
+ 370                     ; 59 	LcdUpdate();
+ 372  0060 cd0000        	call	_LcdUpdate
+ 374                     ; 60 	LcdPutString(20,12,"eat",LCD_DRAW_MODE_CLR);
+ 376  0063 4b01          	push	#1
+ 377  0065 ae00c8        	ldw	x,#L13
+ 378  0068 89            	pushw	x
+ 379  0069 ae140c        	ldw	x,#5132
+ 380  006c cd0000        	call	_LcdPutString
+ 382  006f 5b03          	addw	sp,#3
+ 383                     ; 61 	LcdUpdate();
+ 385  0071 cd0000        	call	_LcdUpdate
+ 387  0074               L33:
+ 388                     ; 62 	while (1);
+ 390  0074 20fe          	jra	L33
+ 415                     	xdef	_main
+ 416                     	xdef	_clkInit
+ 417                     	xdef	_EstaticSensitive
+ 418                     	xref	_LcdFillRoundRect
+ 419                     	xref	_LcdPutString
+ 420                     	xref	_LcdDrawBitmap
+ 421                     	xref	_LcdClear
  422                     	switch	.const
  423  00c8               L13:
  424  00c8 65617400      	dc.b	"eat",0

@@ -199,7 +199,7 @@ void LcdPutOneNumber(uint8_t x, uint8_t y,
 
 /*------------------------------------------------ 
 * LcdPutInteger
-* Put a number on lcd. 
+* Put a number on lcd, no more than 15 numbers
 * Paras:
 *  >> (x,y) : 
 *  >> : 
@@ -229,10 +229,10 @@ void LcdPutInteger(uint8_t x, uint8_t y,
 
 /*------------------------------------------------ 
 * LcdGetNumbers2Wr
-* Get the numbers that should be write 
+* Get the numbers that should be write
 * Paras:
-*  >> : 
-*  >> : 
+*  >> uint32_t: the number that need to be converted
+*  >> uint8_t *: arrays of single number (0-9) 
 * Return: 
 *  >> uint8_t: number of element numbers
 * Change Records: 

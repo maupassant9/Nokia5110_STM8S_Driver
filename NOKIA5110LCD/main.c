@@ -6,7 +6,7 @@
 #include "stm8s_gpio.h"
 #include "stm8s_beep.h"
 
-#include "lcd5110.h"
+//#include "lcd5110.h"
 #include "lcd_draw.h"
 
 const unsigned char EstaticSensitive [] = {
@@ -41,7 +41,7 @@ void clkInit( void )
   //CLK->PCKENR2 |= (CLK_PCKENR2_ADC);
 }
 
-main()
+void main( void )
 {
 	clkInit();
 	
