@@ -22,6 +22,7 @@
 /********************************************
 * Type definition 
 ********************************************/
+
 typedef enum{
 	LCD_DRAW_MODE_SET = 0,
 	LCD_DRAW_MODE_CLR,

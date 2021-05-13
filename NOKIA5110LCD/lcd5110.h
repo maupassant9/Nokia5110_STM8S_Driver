@@ -26,6 +26,17 @@
 #define LCD5110_RESET_PIN GPIO_PIN_3
 
 
+
+//////////////////////////////////////////
+//   ---------------        
+//  |  ....         |    Pixel: (X,Y)
+//  |  ....         |       Convert to offset in
+//  |               |       LCD cache memeory offset
+//  |               |       (offsetX, offsetY)
+//  |               |
+//   ---------------
+//////////////////////////////////////////
+
 void lcd5110Init(void);
 void lcd5110WriteByte(unsigned char dt,unsigned char command);
 void lcd5110SetXy(unsigned char x,unsigned char y);
