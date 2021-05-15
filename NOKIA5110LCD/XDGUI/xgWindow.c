@@ -32,4 +32,12 @@
 /********************************************
 * Functions 
 ********************************************/
+//static function
+XG_Window_t * XG_WindowGetActiveWindow(){
 
+}
+
+
+XG_Widget_t * XG_WindowGetActiveWidget(){
+
+}

@@ -228,23 +228,3 @@ void XG_IconMenuRun(XG_IconMenu_t * menu){
 void XG_IconMenuExit(XG_IconMenu_t * menu){
 
 }
-
-/*------------------------------------------------ 
-* memcopy 
-* memory copy
-* Paras:
-*  >> uint8_t * : original buffer
-*  >> uint8_t * : destination buffer
-*  >> uint16_t : buffer size
-* Return: 
-*  >> 
-* Change Records: 
-*  >> (11/05/2021): Create the function 
-*----------------------------------------------*/
-static void memcopy(uint8_t * org, uint8_t * dest, uint16_t sz){
-	uint16_t i;
-	
-	for(i = 0; i < sz; i++){
-		*dest++ = *org++;
-	}
-}

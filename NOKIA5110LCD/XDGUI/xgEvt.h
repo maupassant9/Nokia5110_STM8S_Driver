@@ -25,7 +25,10 @@
 /********************************************
 * Type definition 
 ********************************************/
+//the event id start from 0 to other positive 
+//number, do not use any negative number here
 enum XG_EvtId_t {
+    XG_EVT_NULL = -1,
     XG_EVT_BUTTON1_PRESSED = 0,
     XG_EVT_BUTTON2_PRESSED,
 };
@@ -41,7 +44,7 @@ enum XG_EvtId_t {
 enum XG_EvtType_t{
     XG_EVT_TYPE_GLOBAL = 0,
     XG_EVT_TYPE_LOCAL_MASKABLE,
-    XG_EVT_TYPE_LOCAL_NON_MASKABLE
+    XG_EVT_TYPE_LOCAL_NONMASKABLE
 };
 
 typedef struct {
@@ -51,11 +54,12 @@ typedef struct {
     enum XG_EvtType_t type;
 } XG_Evt_t;
 
+
 typedef void(*handle)(XG_Evt_t * evt) XG_EvtHandleFunc_t;
 typedef bool XG_EvtMask_t;
 
 typedef struct{
-    XG_Evt_t evtArray[MAX_EVENT_NO];
+    
     XG_EvtHandleFunc_t handleArray[MAX_EVENT_NO];
     XG_EvtMask_t maskArray[MAX_EVENT_NO];
 }XG_EvtHandles_t;
