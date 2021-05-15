@@ -1,46 +1,35 @@
-
 /* 
-* FileName: 
+* xgWindows.h
 * Author: Dong Xia 
-* This is head file of 
+* window is the place where all the activities 
+* on screen happens.
 * 
 * Change Records: 
-*      >> (13/05/2021): Creation of file 
+*      >> (15/05/2021): Creation of file 
 * 
 */
 
-#ifndef  _XG_WIDGET_LABEL_H_
-#define _XG_WIDGET_LABEL_H_
+#ifndef  _XG_WINDOW_H_
+#define _XG_WINDOW_H_
 /********************************************
 * Include 
 ********************************************/
-#include <stm8s.h>
 #include "xg.h"
-#include "xgWidget.h"
 
 /********************************************
 * Macro 
 ********************************************/
+#define XG_WINDOW_MAX_WIDTH LCD_X_RES
+#define XG_WINDOW_MAX_HEIGHT LCD_Y_RES
+
 
 
 /********************************************
 * Type definition 
 ********************************************/
-enum XG_LabelStyle_t{
-    LABEL_STYLE_1 = 0,
-    LABEL_STYLE_2 = 1,
-    LABEL_STYLE_3 = 2,
-    LABEL_STYLE_4 = 3,
-    LABEL_STYLE_5 = 4
-};
+typedef struct{
 
-typedef struct {
-    XG_Widget_t widget;
-    enum XG_LabelStyle_t style;
-    XG_Font_t font;
-    char * str;
-    uint16_t strSz;
-}XG_WidgetLabel_t;
+}XG_Window_t;
 
 /********************************************
 * Function prototype 

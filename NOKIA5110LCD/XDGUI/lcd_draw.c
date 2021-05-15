@@ -15,6 +15,7 @@
 #include "stm8s_gpio.h"
 #include "lcd5110.h"
 #include "lcd_draw.h"
+#include "xg.h"
 
 
 /********************************************
@@ -144,18 +145,32 @@ static void _LcdSwapUInt8(uint8_t * x1,uint8_t * x2);
 * LcdWriteChar
 * Descriptions here. 
 * Paras:
-*  >> : 
-*  >> : 
+*  >> x: x position on screen 
+*  >> y: y position on screen
+*  >> c: char to be written on screen
+*  >> mode: mode to write
 * Return: 
 *  >> 
 * Change Records: 
 *  >> (29/08/2020): Create the function 
 *----------------------------------------------*/
-void LcdPutChar(uint8_t x, uint8_t y, uint8_t c, lcd_draw_mode_t mode)
+void LcdPutChar(uint8_t x, 
+                uint8_t y, 
+                uint8_t c,
+                XG_Font_t *f;
+                lcd_draw_mode_t mode)
 {
 	unsigned char line;
+  unsigned char * pfont = f->font;
+  uint8_t letter_width = f->fontSz.x;
+  uint8_t letter_height = f->fontSz.y;
 	c-=32;
-	LcdDrawBitmap(x,y,&font[c*FONT_WIDTH], FONT_WIDTH,FONT_HEIGHT,mode);
+	//LcdDrawBitmap(x,y,&font[c*FONT_WIDTH], FONT_WIDTH,FONT_HEIGHT,mode);
+  LcdDrawBitmap(x,y,
+    &pfont[c*letter_width], 
+    letter_width,
+    letter_height,
+    mode);
 }
 /*------------------------------------------------ 
 * LcdPutString

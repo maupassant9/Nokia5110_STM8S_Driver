@@ -15,7 +15,7 @@
 * Include 
 ********************************************/
 #include <stm8s.h>
-
+#include "lcd5110.h"
 /********************************************
 * Macro 
 ********************************************/
@@ -33,7 +33,7 @@ typedef struct {
 typedef XG_Pos_t XG_Sz_t;
 
 typedef struct{
-    const unsigned char * font;
+    unsigned char * font;
     XG_Sz_t fontSz;
 } XG_Font_t;
 

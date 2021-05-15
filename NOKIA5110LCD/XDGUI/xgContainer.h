@@ -5,18 +5,16 @@
 * This is head file of 
 * 
 * Change Records: 
-*      >> (13/05/2021): Creation of file 
+*      >> (14/05/2021): Creation of file 
 * 
 */
 
-#ifndef  _XG_WIDGET_LABEL_H_
-#define _XG_WIDGET_LABEL_H_
+#ifndef  _XG_CONTAINER_H_
+#define _XG_CONTAINER_H_
 /********************************************
 * Include 
 ********************************************/
-#include <stm8s.h>
-#include "xg.h"
-#include "xgWidget.h"
+#include "xgCtr.h"
 
 /********************************************
 * Macro 
@@ -26,21 +24,28 @@
 /********************************************
 * Type definition 
 ********************************************/
-enum XG_LabelStyle_t{
-    LABEL_STYLE_1 = 0,
-    LABEL_STYLE_2 = 1,
-    LABEL_STYLE_3 = 2,
-    LABEL_STYLE_4 = 3,
-    LABEL_STYLE_5 = 4
+
+enum XG_ContainerState_t{
+    CONTAINER_NOT_ADD_ON_SCREEN = 0,
+    CONTAINER_ADD_ON_SCREEN,
 };
 
+enum XG_ContainerType_t {
+    XG_CONTAINER_HBOX = 0,
+    XG_CONTAINER_VBOX,
+}
+
 typedef struct {
-    XG_Widget_t widget;
-    enum XG_LabelStyle_t style;
-    XG_Font_t font;
-    char * str;
-    uint16_t strSz;
-}XG_WidgetLabel_t;
+    XG_Control_t ctr;
+    enum XG_ContainerType_t type;
+    enum XG_ContainerState_t state;
+    XG_Sz_t occupiedSz;
+
+    //functions
+    //clear all the children 
+    void (*clear)();
+
+}XG_Container_t;
 
 /********************************************
 * Function prototype 

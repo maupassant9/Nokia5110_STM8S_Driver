@@ -1,32 +1,29 @@
 /*
-* xgCtr.c
+* FileName: 
 * Author: Dong Xia
-* Gerneral functions and parameters for 
-* all the controller used in xgGUI
+* This is source file of 
 *
 * Change Records:
-*      >> (13/05/2021): created
+*      >> (14/05/2021): 
 *
 */
 
 /********************************************
 * Include 
 ********************************************/
-#include <stm8s.h>
 #include "xgCtr.h"
-#include "xgWidget.h"
 
 
 /********************************************
 * Internal Function Declaration 
 ********************************************/
-#define MIN(x,y) (x>y)?y:x;
+
 
 
 /********************************************
 * Internal Types and Variables 
 ********************************************/
-static void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type);
+
 /********************************************
 * External Variables 
 ********************************************/
@@ -35,22 +32,23 @@ static void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type);
 /********************************************
 * Functions 
 ********************************************/
+
+
 /*------------------------------------------------ 
-* XG_CtrInit 
-* Initialize the control structure 
+* XG_ContainerInit 
+* Descriptions here. 
 * Paras:
 *  >> : 
 *  >> : 
 * Return: 
 *  >> 
 * Change Records: 
-*  >> (13/05/2021): Create the function 
+*  >> (14/05/2021): Create the function 
 *----------------------------------------------*/
-void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type){
-    ctr->type = type;
-    ctr->pos.x = 0; ctr->pos.y = 0;
-    ctr->parent = NULL;
-    ctr->child = NULL;
-    ctr->brother = NULL;
-    ctr->size.x = 0; ctr->size.y = 0;
+void XG_ContainerInit(XG_Control_t * ctr){
+    XG_ContainerInit(ctr, CTR_TYPE_CONTAINER);
+
+    //containner init
+    ctr->container.occupiedSz = {0,0};
+    ctr->container.state = CONTAINER_NOT_ADD_ON_SCREEN;
 }
