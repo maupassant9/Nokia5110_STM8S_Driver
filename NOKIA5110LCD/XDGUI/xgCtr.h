@@ -26,7 +26,8 @@
 ********************************************/
 enum XG_CtrType_t{
     CTR_TYPE_CONTAINER = 0,
-    CTR_TYPE_WIDGET
+    CTR_TYPE_WIDGET,
+    CTR_TYPE_WINDOW
 };
 
 typedef struct XG_StructCtr_t{

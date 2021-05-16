@@ -25,12 +25,18 @@
 
 #define XG_WINDOWS_NO 1
 
+#if XG_WINDOWS_NO > 512
+#error No of Window larger than 512 is not supported!!
+#endif
+
 /********************************************
 * Type definition 
 ********************************************/
 typedef struct{
     XG_Control_t ctr;
-
+    //true: the background is filled
+    //false: the background is White
+    bool_t filled;
     
 }XG_Window_t;
 

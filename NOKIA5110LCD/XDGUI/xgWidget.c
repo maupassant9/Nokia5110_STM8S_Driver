@@ -43,3 +43,20 @@ void XG_WidgetInit(XG_Widget_t * widget,
 
 
 
+/*------------------------------------------------ 
+* XG_WindowGetActiveWidget
+* Get the current Active Widget
+* Paras:
+*  >> : 
+*  >> : 
+* Return: 
+*  >> 
+* Change Records: 
+*  >> (29/Dec/2017): Create the function 
+*----------------------------------------------*/
+XG_Widget_t * XG_WindowGetActiveWidget(){
+    
+}
+
+
+
