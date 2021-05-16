@@ -15,6 +15,7 @@
 * Include 
 ********************************************/
 #include "xg.h"
+#include "xgCtr.h"
 
 /********************************************
 * Macro 
@@ -22,13 +23,15 @@
 #define XG_WINDOW_MAX_WIDTH LCD_X_RES
 #define XG_WINDOW_MAX_HEIGHT LCD_Y_RES
 
-
+#define XG_WINDOWS_NO 1
 
 /********************************************
 * Type definition 
 ********************************************/
 typedef struct{
+    XG_Control_t ctr;
 
+    
 }XG_Window_t;
 
 /********************************************

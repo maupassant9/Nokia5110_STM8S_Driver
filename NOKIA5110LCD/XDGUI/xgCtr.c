@@ -54,3 +54,47 @@ void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type){
     ctr->brother = NULL;
     ctr->size.x = 0; ctr->size.y = 0;
 }
+
+
+/*------------------------------------------------ 
+* XG_CtrAddChild
+* Add a child
+* Paras:
+*  >> : 
+*  >> : 
+* Return: 
+*  >> 
+* Change Records: 
+*  >> (15/05/2021): Create the function 
+*----------------------------------------------*/
+void XG_CtrAddChild(XG_Control_t * p, XG_Control_t * c){
+    if(p->child == NULL){
+        p->child = c;
+    } else {
+        XG_CtrGetLastBrother(p->child)->brother = c;
+    }
+}
+
+/*------------------------------------------------ 
+* XG_CtrGetLastBrother
+* Get the last brother of the control, brother control
+* is the control of the same level in the tree.
+* Paras:
+*  >> : 
+*  >> : 
+* Return: 
+*  >> 
+* Change Records: 
+*  >> (15/05/2021): Create the function 
+*----------------------------------------------*/
+static XG_Control_t * 
+XG_CtrGetLastBrother(XG_Control_t *c) {
+    
+    XG_Control_t *nxt;
+
+    nxt = c;
+    while(nxt->brother != NULL){
+        nxt = nxt->brother;
+    }
+    return nxt;
+}
