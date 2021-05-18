@@ -46,13 +46,18 @@ static void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type);
 * Change Records: 
 *  >> (13/05/2021): Create the function 
 *----------------------------------------------*/
-void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type){
+void XG_CtrInit(XG_Control_t * ctr, 
+    enum XG_CtrType_t type,
+    void(*show)(XG_Control_t * c),
+    void(*onEvent)(XG_Control_t * c)){
     ctr->type = type;
     ctr->pos.x = 0; ctr->pos.y = 0;
-    ctr->parent = NULL;
-    ctr->child = NULL;
-    ctr->brother = NULL;
+    ctr->p = NULL;
+    ctr->c = NULL;
+    ctr->b = NULL;
     ctr->size.x = 0; ctr->size.y = 0;
+    ctr->show = show;
+    ctr->onEvent = onEvent;
 }
 
 
@@ -68,10 +73,10 @@ void XG_CtrInit(XG_Control_t * ctr, enum XG_CtrType_t type){
 *  >> (15/05/2021): Create the function 
 *----------------------------------------------*/
 void XG_CtrAddChild(XG_Control_t * p, XG_Control_t * c){
-    if(p->child == NULL){
-        p->child = c;
+    if(p->c == NULL){
+        p->c = c;
     } else {
-        XG_CtrGetLastBrother(p->child)->brother = c;
+        XG_CtrGetLastBrother(p->c)->b = c;
     }
 }
 
@@ -93,8 +98,8 @@ XG_CtrGetLastBrother(XG_Control_t *c) {
     XG_Control_t *nxt;
 
     nxt = c;
-    while(nxt->brother != NULL){
-        nxt = nxt->brother;
+    while(nxt->b != NULL){
+        nxt = nxt->b;
     }
     return nxt;
 }

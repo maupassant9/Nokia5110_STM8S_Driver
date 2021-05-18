@@ -42,7 +42,7 @@ enum XG_WidgetState_t {
 enum XG_WidgetType_t {
     XG_WIDGET_LABEL = 0,
     XG_WIDGET_BUTTON,
-    XG_WIDGET_ICON    
+    XG_WIDGET_ICON
 };
 
 typedef struct {
@@ -52,10 +52,10 @@ typedef struct {
     enum XG_WidgetState_t state;
     //Event arrays
     
-    
     //show widget function
-    void (*show)(XG_Widget_t * widget);
+    void (*show)(XG_Widget_t * w);
     void (*OnEvent)(XG_Evt_t * e);
+    
 }XG_Widget_t;
 
 

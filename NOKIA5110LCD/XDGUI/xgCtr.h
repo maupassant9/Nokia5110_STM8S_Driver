@@ -25,9 +25,9 @@
 * Type definition 
 ********************************************/
 enum XG_CtrType_t{
-    CTR_TYPE_CONTAINER = 0,
-    CTR_TYPE_WIDGET,
-    CTR_TYPE_WINDOW
+    XG_CTR_TYPE_CONTAINER = 0,
+    XG_CTR_TYPE_WIDGET,
+    XG_CTR_TYPE_WINDOW
 };
 
 typedef struct XG_StructCtr_t{
@@ -36,9 +36,15 @@ typedef struct XG_StructCtr_t{
     XG_Pos_t pos;
     XG_Sz_t size;
     //parent control
-    struct XG_StructCtr_t * parent;
-    struct XG_StructCtr_t * child;
-    struct XG_StructCtr_t * brother;
+    // parent
+    struct XG_StructCtr_t * p;
+    // child
+    struct XG_StructCtr_t * c;
+    // brother, same level within a tree
+    struct XG_StructCtr_t * b;
+
+    void (*show)(XG_Control_t * c);
+    void (*onEvent)(XG_Control_t * c);
 }XG_Control_t;
 
 

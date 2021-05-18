@@ -1,7 +1,9 @@
 /*
 * xgWindow.c
 * Author: Dong Xia
-* This is source file of 
+* Window is defined as the root container for 
+* all the other containers and widgets.
+* Only 1 windows per time can be showed on screen
 *
 * Change Records:
 *      >> (15/05/2021): 
@@ -67,8 +69,12 @@ void XG_WindowInit(){
 *----------------------------------------------*/
 void XG_WindowStrInit(XG_Window_t * window, 
             bool_t backgroundFill){
-    XG_CtrInit(&(window->ctr),CTR_TYPE_WINDOW);
+    XG_CtrInit(&(window->ctr),
+        CTR_TYPE_WINDOW,
+        XG_WindowShow,
+        XG_WindowOnEvt);
     window->filled = backgroundFill;
+    
 }
 
 /*------------------------------------------------ 
@@ -105,14 +111,24 @@ int8_t XG_WindowRegisterWindow(XG_Window_t * win){
 * Change Records: 
 *  >> (15/05/2021): Create the function 
 *----------------------------------------------*/
-void XG_WindowSetActive(XG_Window_t * win){
-    XG_CtrAddChild(&(win->ctr), ctr);
+int8_t XG_WindowSetActive(XG_Window_t * win){
+    int i;
+    //check if this window exits in registerd window
+    for(i = 0; i < XG_WINDOWS_NO; i++){
+        if(windows[i] == win){
+            activeWindow = win;
+            return 0;
+        }
+    }
+    return -1;
 }
 
 
 /*------------------------------------------------ 
 * XG_WindowAddWidget
-* Add a control on window
+* Add a control on window, the control type can only 
+* be a container in this case, the widget can not be 
+* add to the window.
 * Paras:
 *  >> : 
 *  >> : 
@@ -121,8 +137,17 @@ void XG_WindowSetActive(XG_Window_t * win){
 * Change Records: 
 *  >> (15/05/2021): Create the function 
 *----------------------------------------------*/
-void XG_WindowAddCtr(XG_Window_t * win,XG_Control_t *ctr){
+int8_t XG_WindowAddCtr(XG_Window_t * win,
+    XG_Control_t *ctr,
+    XG_Pos_t *pos){
+    if(ctr->type != XG_CTR_TYPE_CONTAINER) return -1;
+    if(((pos->x + ctr->size.x) > XG_WINDOW_MAX_WIDTH)&&
+        ((pos->y + ctr->size.y) > XG_WINDOW_MAX_HEIGHT)){
+        return -1;
+    }
+    memcopy(pos, &(ctr->pos)); 
     XG_CtrAddChild(&(win->ctr), ctr);
+    return 0;
 }
 
 
@@ -143,3 +168,42 @@ XG_Window_t * XG_WindowGetActiveWindow(){
     return activeWindow;
 }
 
+
+
+/*------------------------------------------------ 
+* FuncName(); 
+* Descriptions here. 
+* Paras:
+*  >> : 
+*  >> : 
+* Return: 
+*  >> 
+* Change Records: 
+*  >> (16/05/2021): Create the function 
+*----------------------------------------------*/
+void XG_WindowOnEvt(void){
+
+}
+
+
+/*------------------------------------------------ 
+* XG_WindowShow 
+* Scan all the possible container and widgets, and 
+* call corresonding show function of the container
+* Paras:
+*  >> : 
+*  >> : 
+* Return: 
+*  >> 
+* Change Records: 
+*  >> (16/05/2021): Create the function 
+*----------------------------------------------*/
+void XG_WindowShow(XG_Window_t *win){
+    XG_Control_t *nxt = win->ctr.child;
+
+    //get all the container and call the 
+    //show of container 
+    while(nxt != NULL){
+        *(nxt->show)(nxt);
+    }
+}
